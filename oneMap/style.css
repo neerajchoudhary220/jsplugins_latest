@@ -1,0 +1,12 @@
+.result:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+.result>span{
+    padding: 10px;
+    /* display: none; */
+}
+#result{
+    height:500px;
+    overflow-y: scroll;
+}

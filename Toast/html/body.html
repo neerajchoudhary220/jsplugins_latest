@@ -1,0 +1,17 @@
+   <div class="bs-toast toast toast-placement-ex m-2" role="alert" aria-live="assertive" aria-atomic="true"
+        style="position: fixed; top: 0; right: 2px;" data-delay="1500">
+
+        {{!-- data-delay="2000" > --}}
+        <div class="toast-header d-flex text-light">
+            <i class="fa fa-bell mr-2 "></i>
+            <div class="fw-semibold mr-auto" id="header-toast"></div>
+            <small></small>
+            {{!-- <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> --}}
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body text-white" id="toast-body">
+            Hello
+        </div>
+    </div>

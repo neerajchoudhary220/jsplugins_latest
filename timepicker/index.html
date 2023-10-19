@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/jquery.timepicker.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/bootstrap-datepicker.css"
+    />
+  </head>
+  <body>
+    <input type="text" value="02" id="hour" />Hour<br />
+    <input type="text" id="minute" value="43"/>minute<br />
+    <input type="text" id="am_pm" />am/pm
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.timepicker.js"></script>
+    <script src="./js/bootstrap-datepicker.js"></script>
+    <!-- <script src="https://jonthornton.github.io/Datepair.js/dist/datepair.js"></script>
+    <script src="https://jonthornton.github.io/Datepair.js/dist/jquery.datepair.js"></script> -->
+
+    <script>
+      $("#hour").timepicker({
+        timeFormat: "h",
+        step: "60",
+        minTime: "10:00pm",
+        maxTime: "12:00pm",
+        defaultTime: "10:43pm",
+        startTime: "10:43",
+      });
+
+      $("#minute").timepicker({
+        timeFormat: "i",
+        step: "1",
+        interval: 253,
+        minTime: "10:00pm",
+        maxTime: "10:59pm",
+        defaultTime: "12:00",
+        startTime: "12:00",
+      });
+
+      $("#am_pm").timepicker({
+        timeFormat: "a",
+        step: "720",
+        minTime: "10:00pm",
+        maxTime: "10:00am",
+        defaultTime: "12:00",
+        startTime: "12:00",
+      });
+    </script>
+  </body>
+</html>
